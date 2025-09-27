@@ -10,7 +10,7 @@
     <!-- Application Structure Plan: This SPA transforms the static resume into an interactive portfolio. The structure includes a header with key highlights, a sticky navigation bar for easy access, an interactive vertical timeline for work experience, a bar chart for skill visualization, and card-based layouts for accomplishments and certifications. This design prioritizes user engagement and allows recruiters to quickly grasp key qualifications and delve into details, creating a more dynamic and informative experience than a traditional document. -->
     <!-- Visualization & Content Choices: 
         - Experience -> Goal: Organize/Explore -> Viz: Interactive Vertical Timeline -> Interaction: Click on a company to dynamically display role details -> Justification: More engaging and space-efficient than a static list, focusing user attention on one role at a time -> Library/Method: HTML/Tailwind/JS.
-        - Skills -> Goal: Compare/Inform -> Viz: Horizontal Bar Chart -> Interaction: Hover for tooltips -> Justification: Provides a clear, at-a-glance visualization of expertise across different technical categories -> Library/Method: Chart.js/Canvas.
+        - Skills -> Goal: Compare/Inform -> Viz: Horizontal Bar Chart -> Interaction: Hover for tooltips -> Justification: Provides a clear, at-a- glance visualization of expertise across different technical categories -> Library/Method: Chart.js/Canvas.
         - Accomplishments/Certs -> Goal: Highlight/Inform -> Viz: Card Layout -> Interaction: Static display -> Justification: Improves scannability and visually separates key achievements from other content -> Library/Method: HTML/Tailwind.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
@@ -93,6 +93,44 @@
             <div class="chart-container">
                 <canvas id="skillsChart"></canvas>
             </div>
+            
+            <div class="max-w-4xl mx-auto mt-12 px-4">
+                <h3 class="text-xl font-semibold mb-4 text-slate-800 border-b pb-2">Core Automation, DevOps & Monitoring Tools</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8 text-slate-600">
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1">Automation & Testing:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Selenium, Java (BDD), Rest Assured</li>
+                            <li>Provar, AccelQ</li>
+                            <li>Salesforce CLI, LWC Components</li>
+                            <li>CodeScan, Blitzpy (Code Quality)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1">DevOps & Cloud:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Jenkins (CI/CD), Heroku</li>
+                            <li>AWS Services (Lambda, API Gateway, CloudWatch, VPC, IAM)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1">Monitoring & Management:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Splunk, FPS, Argus, Huron</li>
+                            <li>TFS, Jira (Project Management)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-800 mb-1">Build & Reporting:</p>
+                        <ul class="list-disc list-inside ml-4 space-y-1">
+                            <li>Maven (Dependency Management)</li>
+                            <li>Extent Reports (Automation Reporting)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="accomplishments" class="py-16">
